@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class CharacterBehavior : MonoBehaviour
 {
-
     public GameObject textBubble;
     // Start is called before the first frame update
     void Start()

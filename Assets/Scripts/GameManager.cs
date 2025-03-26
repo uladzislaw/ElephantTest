@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class GameManager : MonoBehaviour
     public GameObject hintPanel;
     public GameObject teacher;
     public GameObject startButton;
+    public GameObject startButtonAnim;
+    public GameObject stopButton;
+    public GameObject stopButtonAnim;
 
     private Animator animator;
     
@@ -40,18 +44,35 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnButtonClick()
+    public void OnStartButtonClick()
     {
-        teacher.GetComponent<TestScript>().enabled = true;
-        startButton.GetComponent<Animator>().SetBool("IsTextComplete", false);
+        StartCoroutine(ActivateStopButton());
+    }
+
+    public void OnStopButtonClick()
+    {
+        SceneManager.LoadScene(3);
     }
 
     IEnumerator HideHint()
     {
         hintText.enabled = true;
-        animator.Play("ShowHint");
+        animator.SetBool("IsTimeForHint", true);
+        //animator.Play("ShowHint");
         yield return new WaitForSeconds(4f);
+        animator.SetBool("IsTimeForHint", false);
+        //animator.Play("Idle");
         hintPanel.SetActive(false);
+    }
+
+    IEnumerator ActivateStopButton()
+    {
+        teacher.GetComponent<TestScript>().enabled = true;
+        startButtonAnim.GetComponent<Animator>().SetBool("IsTextComplete", false);
+        startButton.SetActive(false);
+        yield return new WaitForSeconds(20f);
+        stopButton.SetActive(true);
+        stopButtonAnim.GetComponent<Animator>().SetBool("IsTextComplete", true);
     }
 
     /*public void ShowHint()
