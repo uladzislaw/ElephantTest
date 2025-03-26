@@ -14,6 +14,7 @@ public class TestScript : MonoBehaviour
     public AudioClip typeSound;
     public Animator animator;
     public TMP_Text tmpText;
+    public GameObject bubbleBox;
     public GameManager gameManager;
     
     private List<string> sentences = new List<string>();
@@ -21,6 +22,7 @@ public class TestScript : MonoBehaviour
 
     void Start()
     {
+        bubbleBox.SetActive(true);
         if (tmpText == null) Debug.LogError("TMP_Text component missing!");
         
         audioSource = GetComponent<AudioSource>();

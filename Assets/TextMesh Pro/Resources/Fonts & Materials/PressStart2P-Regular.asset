@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: PressStart2P-Regular
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 768252114
   material: {fileID: 1367571794787228649}
-  materialHashCode: 0
+  materialHashCode: 1702370482
   m_Version: 1.1.0
   m_SourceFontFileGUID: 5ce9894df7f4c3445a8fc32561320092
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 5ce9894df7f4c3445a8fc32561320092, type: 3}

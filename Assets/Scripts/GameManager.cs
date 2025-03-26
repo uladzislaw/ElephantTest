@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     private TMP_Text hintText;
     
     public GameObject hintPanel;
+    public GameObject teacher;
+    public GameObject startButton;
 
     private Animator animator;
     
@@ -29,13 +32,26 @@ public class GameManager : MonoBehaviour
     {
         if (showHint == true)
         {
-            hintText.enabled = true;
-            animator.Play("ShowHint");
+            StartCoroutine(HideHint());
         }
         else
         {
             hintText.enabled = false;
         }
+    }
+
+    public void OnButtonClick()
+    {
+        teacher.GetComponent<TestScript>().enabled = true;
+        startButton.GetComponent<Animator>().SetBool("IsTextComplete", false);
+    }
+
+    IEnumerator HideHint()
+    {
+        hintText.enabled = true;
+        animator.Play("ShowHint");
+        yield return new WaitForSeconds(4f);
+        hintPanel.SetActive(false);
     }
 
     /*public void ShowHint()
