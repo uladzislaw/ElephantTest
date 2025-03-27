@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void OnStopButtonClick()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     IEnumerator HideHint()
@@ -74,9 +74,4 @@ public class GameManager : MonoBehaviour
         stopButton.SetActive(true);
         stopButtonAnim.GetComponent<Animator>().SetBool("IsTextComplete", true);
     }
-
-    /*public void ShowHint()
-    {
-        showHint = true;
-    }*/
 }

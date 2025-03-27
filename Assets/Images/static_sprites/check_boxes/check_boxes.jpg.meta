@@ -142,7 +142,7 @@ TextureImporter:
       name: check_boxes_2
       rect:
         serializedVersion: 2
-        x: 971
+        x: 961
         y: 1000
         width: 2803
         height: 2706
@@ -165,11 +165,11 @@ TextureImporter:
         serializedVersion: 2
         x: 4264
         y: 980
-        width: 2736
-        height: 2726
+        width: 2803
+        height: 2706
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 68, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
