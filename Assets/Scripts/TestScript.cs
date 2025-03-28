@@ -39,7 +39,7 @@ public class TestScript : MonoBehaviour
     void InitializeSentences()
     {
         sentences.Add("Hello kids");
-        sentences.Add("Let's start the examine");
+        sentences.Add("Let's start the exam");
         sentences.Add("First question is");
         sentences.Add("2+2*2=?");
         

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 3a4476b30811dcd4fa5656d096c6536d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 889279152128
+    m_Localized: evaluemos a los estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1288476229632
+    m_Localized: 5?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1675358830592
+    m_Localized: 69?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1757768515584
+    m_Localized: 228?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1907660357632
+    m_Localized: 6?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1999729524736
+    m_Localized: $%##gdbh%?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2151630438400
+    m_Localized: que??
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2398662361088
+    m_Localized: "D\xF3nde estoy?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2803525943296
+    m_Localized: "no s\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2982308151296
+    m_Localized: correcto?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3252656209920
+    m_Localized: salida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29047667752960
+    m_Localized: "Hola ni\xF1os"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29280866861056
+    m_Localized: Empecemos el examen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29503857033216
+    m_Localized: La primera pregunta es
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29971421265920
+    m_Localized: Iniciar examen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30190091304960
+    m_Localized: detener el examen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30456110841856
+    m_Localized: Seleccione y haga clic en cualquier estudiante
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
